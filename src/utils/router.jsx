@@ -35,9 +35,16 @@ const router = createBrowserRouter([
                 element:<AboutUs></AboutUs>
             },
             {
-                path: "/lesson",
-                element: <Lessons />,
-                loader:() => fetch("/vocabulary.json"),
+                path: "/lesson/:id",
+                element: <PrivetRoute><Lessons /></PrivetRoute>,
+                loader:async ({params}) => {
+                    const res = await fetch("/language.json")
+                    const data = await res.json()
+                    
+                    const singleData = data.find(d => d.id == params.id)
+                    console.log(singleData)
+                    return singleData
+                }
             },
             {
                 path:"/profile",

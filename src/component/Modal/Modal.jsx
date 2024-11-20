@@ -1,25 +1,33 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 
 
-const Modal = ({vocabulary}) => {
-    const{word, meaning,  when_to_say , example}=vocabulary
+const Modal = () => {
+  const {vocabulary} = useLoaderData()
+    console.log(vocabulary)
+    
 
     return (
         <div>
-           {/* Open the modal using document.getElementById('ID').showModal() method */}
-             {/* <button className="btn" onClick={()=>document.getElementById('my_modal_2').showModal()}>open modal</button> */}
-             <dialog id="my_modal_2" className="modal">
+           
+          {
+            vocabulary.map(learnMore =>(
+              <div key={learnMore.id}>
+                <dialog id="my_modal_2" className="modal">
                <div className="modal-box">
-                 <h3 className="font-bold text-lg">{word}</h3>
-                 <p className="py-4">{meaning}</p>
-                 <p className="py-4">{when_to_say}</p>
-                 <p className="py-4">{example}</p>
-                 <NavLink to="/StartLearning" className="btn">Back to lesson</NavLink>
+                 <h3 className="font-bold text-lg">Word: {learnMore.word}</h3>
+                 <p className="py-2 text-xl"> Meaning: {learnMore.meaning}</p>
+                 <p className="py-2">When to say: {learnMore.when_to_say}</p>
+                 <p className="py-2">Example: {learnMore.example}</p>
+                 <NavLink to="/StartLearning" className="btn bg-blue-950 text-white hover:bg-white hover:text-black hover:font-bold hover:border-none mt-2">Back to lesson</NavLink>
                </div>
                <form method="dialog" className="modal-backdrop">
                  <button>close</button>
                </form>
              </dialog>
+              </div>
+            ))
+          }
+
         </div>
     );
 };

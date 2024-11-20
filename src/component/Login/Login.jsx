@@ -23,7 +23,7 @@ const Login = () => {
 
        handleLogin(email, password)
        .then( res => {
-          navigate(location.state.from)
+          navigate("/")
        })
        .catch(err=>{
         setError(err.message)
@@ -33,13 +33,13 @@ const Login = () => {
       const googleLoginHandler = () =>{
         handleGoogleLogin()
         .then(res =>{
-          navigate(location.state.from)
+          navigate(location?.state ? location.state : "/")
         })
       }
     
     return (
         <div className="mt-[50%] md:my-7 lg:my-36 px-7 max-w-md space-y-4  mx-auto">
-            {/* <div className="absolute inset-0 flex justify-center items-center z-0">
+            {/* <div className="absolute  flex justify-center items-center z-0">
               <div className="animate-snow fall">
                 <div className="snowflake">&#10052;</div>
                 <div className="snowflake">&#10052;</div>

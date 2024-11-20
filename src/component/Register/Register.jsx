@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { useContext, useState } from "react";
 import "../Banner/Banner.css"
@@ -7,6 +7,7 @@ const Register = () => {
 const [error, setError] = useState('');
 const {handleRegister,manageProfile} = useContext(authContext) 
 const navigate =useNavigate()
+const location = useLocation()
 
 const handleSubmit = (e) => {
    e.preventDefault()
@@ -33,7 +34,7 @@ const handleSubmit = (e) => {
    handleRegister(email, password)
    .then(res=>{
     manageProfile(name,image)
-    navigate(location.state.from)
+    navigate(location?.state ? location.state : "/")
    })
 }
 
