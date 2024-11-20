@@ -2,8 +2,8 @@
 
 const Testimonial = () => {
     return (
-        <div className="bg-gray-50 py-20 px-5 md:px-20">
-  <h2 className="text-4xl font-bold text-blue-600 text-center mb-6">What Our Users Say</h2>
+        <div className="bg-[#79bef9] py-20 px-5 md:px-20">
+  <h2 className="text-4xl font-bold text-white text-center mb-6">What Our Users Say</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
     <div className="p-6 bg-white shadow-md rounded-lg">
       <p className="text-gray-700">
