@@ -1,21 +1,41 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import "../Banner/Banner.css"
 
 
 const Login = () => {
     const {handleGoogleLogin} = useContext(authContext)
-    const {handleLogin} = useContext(authContext)   
+    const {handleLogin} = useContext(authContext) 
+    const [error, setError] = useState('');  
+    const location = useLocation()
+    const navigate =useNavigate()
+    console.log(location)
+
+
     const handleSubmit = (e) => {
        e.preventDefault()
-       
+       setError('')
+
        const email = e.target.email.value
        const password = e.target.password.value
        console.log(email, password)
 
        handleLogin(email, password)
-}
+       .then( res => {
+          navigate(location.state.from)
+       })
+       .catch(err=>{
+        setError(err.message)
+       })
+      }
+
+      const googleLoginHandler = () =>{
+        handleGoogleLogin()
+        .then(res =>{
+          navigate(location.state.from)
+        })
+      }
     
     return (
         <div className="mt-[50%] md:my-7 lg:my-36 px-7 max-w-md space-y-4  mx-auto">
@@ -45,7 +65,7 @@ const Login = () => {
                  <path
                    d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                </svg>
-               <input type="text"name="email" className="grow" placeholder="Email" />
+               <input type="text"name="email" className="grow" placeholder="Email" required/>
              </label>
 
              <label className="input input-bordered flex items-center gap-2">
@@ -59,16 +79,17 @@ const Login = () => {
                    d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
                    clipRule="evenodd" />
                </svg>
-               <input type="password" name="password" className="grow" placeholder="password" />
+               <input type="password" name="password" className="grow" placeholder="password" required/>
              </label>
             <button type="submit" className="btn w-full text-white text-bold text-lg bg-blue-950">Login</button>
         </div>
            </form>
            <div className="text-center ">
             <h4 className="mb-2">Or</h4>
-            <button onClick={handleGoogleLogin} className="btn w-full text-base bg-transparent border-2 border-blue-950 hover:bg-blue-50 hover:border-none mb-4">Log in with Google</button>
+            <button onClick={googleLoginHandler} className="btn w-full text-base bg-transparent border-2 border-blue-950 hover:bg-blue-950 hover:text-white hover:border-none mb-4">Log in with Google</button>
            </div>
            New to the website ?  <NavLink to="/register" className="text-blue-950 text-base font-bold">Register</NavLink>
+           {error?<p className="mt-2 text-red-500">{error}</p>:''}
         </div>
     );
 };

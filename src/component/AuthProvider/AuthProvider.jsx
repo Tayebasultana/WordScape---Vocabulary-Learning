@@ -5,7 +5,8 @@ import {
     onAuthStateChanged, 
     signInWithEmailAndPassword, 
     signInWithPopup,
-    signOut} from "firebase/auth";
+    signOut,
+    updateProfile} from "firebase/auth";
 import auth from "../../firebase/firebase.config"
 
 export const authContext = createContext()
@@ -15,15 +16,21 @@ const AuthProvider = ({routes}) => {
     const googleProvider = new GoogleAuthProvider()
 
     const [user, setUser] = useState(null)
+    const [loading, setLoading] = useState(true)
 
 const handleRegister = (email, password)=>{
-    createUserWithEmailAndPassword(auth, email, password)
+   return createUserWithEmailAndPassword(auth, email, password)
 }
 const handleLogin =(email,password)=>{
-    signInWithEmailAndPassword(auth, email, password)
+    return signInWithEmailAndPassword(auth, email, password)
 }
 const handleGoogleLogin = () => {
-    signInWithPopup(auth, googleProvider)
+    return signInWithPopup(auth, googleProvider)
+}
+const manageProfile = (name,image)=>{
+    updateProfile(auth.currentUser,{
+        displayName:name,photoURL:image
+    })
 }
 const handleLogout = () => {
     signOut(auth);
@@ -33,13 +40,23 @@ const authInfo = {
     handleRegister,
     handleLogin,
     handleGoogleLogin,
-    handleLogout
+    handleLogout,
+    manageProfile,
+    user,
+    setUser,
+    loading,
 }
 
 
 useEffect(()=>{
 const nonRegister = onAuthStateChanged(auth,(currentUser)=>{
-    console.log(currentUser)
+    if(currentUser){
+        setUser(currentUser)
+    }
+    else{
+        setUser(null)
+    }
+    setLoading(false)
 
     return()=>{
         nonRegister()

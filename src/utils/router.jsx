@@ -7,6 +7,8 @@ import AboutUs from "../component/AboutUs/AboutUs"
 import Lessons from "../component/StartLearning/Lessons/Lessons";
 import Login from "../component/Login/Login";
 import Register from "../component/Register/Register";
+import PrivetRoute from "../component/PrivetRoute/PrivetRoute";
+import Profile from "../component/Profile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -24,7 +26,9 @@ const router = createBrowserRouter([
             },
             {
                 path:"/Tutorials",
-                element:<Tutorials></Tutorials>
+                element:<PrivetRoute>
+                    <Tutorials></Tutorials>
+                </PrivetRoute>
             },
             {
                 path:"/AboutUs",
@@ -35,7 +39,10 @@ const router = createBrowserRouter([
                 element: <Lessons />,
                 loader:() => fetch("/vocabulary.json"),
             },
-            
+            {
+                path:"/profile",
+                element:<Profile></Profile>
+            }
         ]
     },
     {
