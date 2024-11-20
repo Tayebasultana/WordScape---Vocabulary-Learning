@@ -1,0 +1,151 @@
+[
+    {
+      "id": 1,
+      "language": "Spanish",
+      "country": "Spain",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg",
+      "learners": "500M+",
+      "vocabulary": [
+      {"id": 1, "word": "Hola", "meaning": "Hello", "pronunciation": "OH-lah", "part_of_speech": "interjection" },
+      {"id": 2, "word": "Gracias", "meaning": "Thank you", "pronunciation": "GRAH-syahs", "part_of_speech": "noun" }
+    ]
+    },
+    {
+      "id": 2,
+      "language": "Mandarin Chinese",
+      "country": "China",
+      "flag": "https://th.bing.com/th/id/OIP.wjN7jAdy5evtymlw1-AZogHaE7?rs=1&pid=ImgDetMain",
+      "learners": "1B+",
+      "vocabulary": [
+      {"id": 1, "word": "你好", "meaning": "Hello", "pronunciation": "nǐ hǎo", "part_of_speech": "interjection" },
+      {"id": 2, "word": "谢谢", "meaning": "Thank you", "pronunciation": "xiè xiè", "part_of_speech": "verb" }
+    ]
+    },
+    {
+      "id": 3,
+      "language": "French",
+      "country": "France",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+      "learners": "220M+",
+      "vocabulary": [
+      {"id": 1, "word": "Bonjour", "meaning": "Hello", "pronunciation": "bohn-ZHOOR", "part_of_speech": "interjection" },
+      {"id": 2, "word": "Merci", "meaning": "Thank you", "pronunciation": "mehr-SEE", "part_of_speech": "noun" }
+    ]
+    },
+    {
+      "id": 4,
+      "language": "German",
+      "country": "Germany",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg",
+      "learners": "100M+",
+      "vocabulary": [
+      {"id": 1, "word": "Hallo", "meaning": "Hello", "pronunciation": "HAH-loh", "part_of_speech": "interjection" },
+      {"id": 2, "word": "Danke", "meaning": "Thank you", "pronunciation": "DAHN-kuh", "part_of_speech": "verb" }
+    ]
+    },
+    {
+      "id": 5,
+      "language": "Japanese",
+      "country": "Japan",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg",
+      "learners": "125M+",
+      "vocabulary": [
+      {"id": 1, "word": "こんにちは", "meaning": "Hello", "pronunciation": "kon-ni-chi-wa", "part_of_speech": "interjection" },
+      {"id": 2, "word": "ありがとう", "meaning": "Thank you", "pronunciation": "a-ri-ga-toh", "part_of_speech": "noun" }
+    ]
+    },
+    {
+      "id": 6,
+      "language": "Arabic",
+      "country": "Multiple Countries",
+      "flag": "https://th.bing.com/th/id/R.203f4c337a3a84c105d07e27e132bcda?rik=vHHN04GNxXhzUQ&pid=ImgRaw&r=0",
+      "learners": "310M+",
+      "vocabulary": [
+    {"id": 1, "word": "مرحبا", "meaning": "Hello", "pronunciation": "mar-Ha-ban", "part_of_speech": "interjection" },
+    {"id": 2, "word": "شكرا", "meaning": "Thank you", "pronunciation": "shuk-RAN", "part_of_speech": "noun" },
+    {"id": 3, "word": "حب", "meaning": "Love", "pronunciation": "hub", "part_of_speech": "noun" },
+    {"id": 4, "word": "سعادة", "meaning": "Happiness", "pronunciation": "sa-aa-da", "part_of_speech": "noun" },
+    {"id": 5, "word": "أسرة", "meaning": "Family", "pronunciation": "os-rah", "part_of_speech": "noun" },
+    {"id": 6, "word": "بيت", "meaning": "House", "pronunciation": "bait", "part_of_speech": "noun" },
+    {"id": 7, "word": "قهوة", "meaning": "Coffee", "pronunciation": "qah-wah", "part_of_speech": "noun" },
+    {"id": 8, "word": "عمل", "meaning": "Work", "pronunciation": "a-mal", "part_of_speech": "noun" },
+    {"id": 9, "word": "صديق", "meaning": "Friend", "pronunciation": "sa-deeq", "part_of_speech": "noun" },
+    {"id": 10, "word": "سلام", "meaning": "Peace", "pronunciation": "sa-lam", "part_of_speech": "noun" }
+  ]
+    },
+    {
+      "id": 7,
+      "language": "Hindi",
+      "country": "India",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg",
+      "learners": "600M+",
+      "vocabulary": [
+      {"id": 1, "word": "नमस्ते", "meaning": "Hello", "pronunciation": "na-mas-te", "part_of_speech": "interjection" },
+      {"id": 2, "word": "धन्यवाद", "meaning": "Thank you", "pronunciation": "dhanyavaad", "part_of_speech": "noun" }
+    ]
+    },
+    {
+      "id": 8,
+      "language": "Portuguese",
+      "country": "Portugal",
+      "flag": "https://th.bing.com/th/id/OIP.kCDStjL0hRuNvmrFHOUvEwHaE8?rs=1&pid=ImgDetMain",
+      "learners": "220M+",
+      "vocabulary": [
+    {"id": 1, "word": "Olá", "meaning": "Hello", "pronunciation": "oh-LAH", "part_of_speech": "interjection" },
+    {"id": 2, "word": "Obrigado", "meaning": "Thank you (male)", "pronunciation": "oh-bree-GAH-doo", "part_of_speech": "noun" },
+    {"id": 3, "word": "Amor", "meaning": "Love", "pronunciation": "ah-MOHR", "part_of_speech": "noun" },
+    {"id": 4, "word": "Feliz", "meaning": "Happy", "pronunciation": "feh-LEEZ", "part_of_speech": "adjective" },
+    {"id": 5, "word": "Família", "meaning": "Family", "pronunciation": "fah-MEE-lya", "part_of_speech": "noun" },
+    {"id": 6, "word": "Casa", "meaning": "House", "pronunciation": "KAH-zah", "part_of_speech": "noun" },
+    {"id": 7, "word": "Café", "meaning": "Coffee", "pronunciation": "kah-FEH", "part_of_speech": "noun" },
+    {"id": 8, "word": "Trabalho", "meaning": "Work", "pronunciation": "trah-BAH-lyoo", "part_of_speech": "noun" },
+    {"id": 9, "word": "Saúde", "meaning": "Health", "pronunciation": "sah-OOD", "part_of_speech": "noun" },
+    {"id": 10, "word": "Amigo", "meaning": "Friend", "pronunciation": "ah-MEE-goo", "part_of_speech": "noun" }
+  ]
+    },
+    {
+      "id": 9,
+      "language": "Russian",
+      "country": "Russia",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg",
+      "learners": "154M+",
+      "vocabulary": [
+        {"id": 1, "word": "Привет", "meaning": "Hello", "pronunciation": "pree-vyet", "part_of_speech": "interjection" },
+        {"id": 2, "word": "Спасибо", "meaning": "Thank you", "pronunciation": "spa-see-ba", "part_of_speech": "noun" }
+      ]
+    },
+    {
+      "id": 10,
+      "language": "Korean",
+      "country": "South Korea",
+      "flag": "https://wallpapercave.com/wp/wp3281876.png",
+      "learners": "75M+",
+      "vocabulary": [
+      {"id": 1, "word": "안녕하세요", "meaning": "Hello", "pronunciation": "an-nyeong-ha-se-yo", "part_of_speech": "interjection" },
+      {"id": 2, "word": "감사합니다", "meaning": "Thank you", "pronunciation": "gam-sa-ham-ni-da", "part_of_speech": "noun" }
+    ]
+    },
+    {
+      "id": 11,
+      "language": "Italian",
+      "country": "Italy",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg",
+      "learners": "65M+",
+      "vocabulary": [
+      {"id": 1, "word": "Ciao", "meaning": "Hello/Goodbye", "pronunciation": "CHOW", "part_of_speech": "interjection" },
+      {"id": 2, "word": "Grazie", "meaning": "Thank you", "pronunciation": "GRAH-tsyeh", "part_of_speech": "noun" }
+    ]
+    },
+    {
+      "id": 12,
+      "language": "Turkish",
+      "country": "Turkey",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
+      "learners": "75M+",
+      "vocabulary": [
+      {"id": 1, "word": "Merhaba", "meaning": "Hello", "pronunciation": "mehr-HAH-bah", "part_of_speech": "interjection" },
+      {"id": 2, "word": "Teşekkürler", "meaning": "Thank you", "pronunciation": "te-sheh-KUR-lehr", "part_of_speech": "noun" }
+    ]
+    }
+  ]
+  

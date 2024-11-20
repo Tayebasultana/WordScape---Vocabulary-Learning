@@ -1,0 +1,30 @@
+@keyframes snowfall {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100vh); }
+  }
+  
+  .animate-snow .snowflake {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    animation: snowfall linear infinite;
+  }
+  
+  .animate-snow .snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+  }
+  
+  .animate-snow .snowflake:nth-child(2) {
+    left: 40%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+  }
+  
+  .animate-snow .snowflake:nth-child(3) {
+    left: 70%;
+    animation-duration: 14s;
+    animation-delay: 4s;
+  }
+  
