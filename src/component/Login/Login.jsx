@@ -1,7 +1,10 @@
 import { useContext, useState } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import "../Banner/Banner.css"
+import "../Banner/Banner.css";
+import { toast } from "react-toastify";
+
+
 
 
 const Login = () => {
@@ -9,6 +12,7 @@ const Login = () => {
     const {handleLogin} = useContext(authContext) 
     const [error, setError] = useState('');  
     const location = useLocation()
+    // const { user } = useContext(authContext);
     const navigate =useNavigate()
     console.log(location)
 
@@ -23,7 +27,10 @@ const Login = () => {
 
        handleLogin(email, password)
        .then( res => {
+        //  const loggedInUser = res.user; 
+        
           navigate(location?.state ? location.state : "/")
+          toast.success('log in successfull')
        })
        .catch(err=>{
         setError(err.message)
@@ -33,7 +40,9 @@ const Login = () => {
       const googleLoginHandler = () =>{
         handleGoogleLogin()
         .then(res =>{
+          
           navigate(location?.state ? location.state : "/")
+          toast.success('log in successfull')
         })
       }
 

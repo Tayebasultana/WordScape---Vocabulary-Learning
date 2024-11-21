@@ -12,11 +12,13 @@ import Profile from "../component/Profile/Profile";
 import MyProfile from "../component/Profile/MyProfile";
 import UpdateProfile from "../component/Profile/UpdateProfile";
 import ForgetPassword from "../component/ForgetPassword/ForgetPassword";
+import ErrorPage from "../component/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path:"/",
         element:<MainLayout></MainLayout>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:"/",

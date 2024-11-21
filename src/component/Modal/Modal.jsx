@@ -18,7 +18,7 @@ const Modal = () => {
                  <p className="py-2 text-xl"> Meaning: {learnMore.meaning}</p>
                  <p className="py-2">When to say: {learnMore.when_to_say}</p>
                  <p className="py-2">Example: {learnMore.example}</p>
-                 <NavLink to="/StartLearning" className="btn bg-blue-950 text-white hover:bg-white hover:text-black hover:font-bold hover:border-none mt-2">Back to lesson</NavLink>
+                 
                </div>
                <form method="dialog" className="modal-backdrop">
                  <button>close</button>
