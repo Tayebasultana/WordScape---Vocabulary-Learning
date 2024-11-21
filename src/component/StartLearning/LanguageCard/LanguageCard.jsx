@@ -7,7 +7,7 @@ const LanguageCard = ({tongue}) => {
 
 
     return (
-        <div className="card bg-base-100 shadow-xl transition hover:scale-105">
+        <div className="card bg-base-100 shadow-xl transition hover:scale-105 mx-4">
           <figure className="px-10 pt-10">
             <img
               src={flag}

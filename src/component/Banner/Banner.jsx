@@ -4,7 +4,7 @@ import "./Banner.css"
 
 const Banner = () => {
     return (
-      <div className="hero py-20 relative p-8 shadow-lg bg-gradient-to-r from-blue-300 to-white overflow-hidden">
+      <div className="hero py-4 md:py-20 relative p-8 shadow-lg bg-gradient-to-r from-blue-300 to-white overflow-hidden">
   {/* Decorative Snowflakes */}
   <div className="absolute inset-0 flex justify-center items-center z-0">
     <div className="animate-snow fall">
@@ -18,7 +18,7 @@ const Banner = () => {
   <div className="absolute -top-10 -left-10 w-60 h-60 bg-white opacity-10 rounded-full"></div>
   <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-indigo-400 opacity-20 rounded-full"></div>
 
-  <div className="relative z-10 flex flex-col md:flex-row items-center gap-28 justify-center">
+  <div className="relative z-10 flex flex-col md:flex-row items-center gap-7 md:gap-28 justify-center">
     <div className="max-w-2xl text-center md:text-left z-20">
       <h2 className="font-extrabold text-4xl md:text-5xl text-white leading-tight">
         Level Up Your Language with <span className="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 via-blue-300 to-sky-500">Word Scape</span>

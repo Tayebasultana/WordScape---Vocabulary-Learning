@@ -9,6 +9,8 @@ import Login from "../component/Login/Login";
 import Register from "../component/Register/Register";
 import PrivetRoute from "../component/PrivetRoute/PrivetRoute";
 import Profile from "../component/Profile/Profile";
+import MyProfile from "../component/Profile/MyProfile";
+import UpdateProfile from "../component/Profile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -48,7 +50,17 @@ const router = createBrowserRouter([
             },
             {
                 path:"/profile",
-                element:<Profile></Profile>
+                element:<Profile></Profile>,
+                children:[
+                    {
+                        path:"/profile",
+                        element:<MyProfile></MyProfile>
+                    },
+                    {
+                        path:"/profile/updateProfile",
+                        element:<UpdateProfile></UpdateProfile>
+                    }
+                ]
             }
         ]
     },

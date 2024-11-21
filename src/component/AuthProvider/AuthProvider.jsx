@@ -29,7 +29,8 @@ const handleGoogleLogin = () => {
 }
 const manageProfile = (name,image)=>{
     updateProfile(auth.currentUser,{
-        displayName:name,photoURL:image
+        displayName:name,
+        photoURL:image
     })
 }
 const handleLogout = () => {

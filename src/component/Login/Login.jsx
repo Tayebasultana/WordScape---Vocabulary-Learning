@@ -23,7 +23,7 @@ const Login = () => {
 
        handleLogin(email, password)
        .then( res => {
-          navigate("/")
+          navigate(location?.state ? location.state : "/")
        })
        .catch(err=>{
         setError(err.message)

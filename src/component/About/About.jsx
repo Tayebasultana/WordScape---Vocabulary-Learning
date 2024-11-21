@@ -6,11 +6,10 @@ const About = () => {
       <section className="bg-[#2ad2ef] text-white text-center py-20">
         <h1 className="text-5xl font-extrabold mb-4">Welcome to WordScape</h1>
         <p className="text-xl mb-6">Learn new words, expand your vocabulary, and unlock the power of communication.</p>
-        <a href="#how-to-learn" className="bg-white text-blue-600 py-2 px-6 rounded-full font-semibold hover:bg-blue-100 transition">Get Started</a>
       </section>
 
       {/* How to Learn Section */}
-      <section id="how-to-learn" className="py-16 bg-gray-100 text-center">
+      <section id="how-to-learn" className="py-16 bg-gray-100 text-center px-4 md:px-8">
         <h2 className="text-4xl font-semibold text-blue-600 mb-6">How to Learn Vocabulary</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
