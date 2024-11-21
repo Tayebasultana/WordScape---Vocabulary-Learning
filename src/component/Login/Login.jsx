@@ -36,9 +36,11 @@ const Login = () => {
           navigate(location?.state ? location.state : "/")
         })
       }
+
+      
     
     return (
-        <div className="mt-[50%] md:my-7 lg:my-36 px-7 max-w-md space-y-4  mx-auto">
+        <div className=" md:my-7 lg:my-36 px-7 max-w-md space-y-4  mx-auto">
             {/* <div className="absolute  flex justify-center items-center z-0">
               <div className="animate-snow fall">
                 <div className="snowflake">&#10052;</div>
@@ -81,6 +83,9 @@ const Login = () => {
                </svg>
                <input type="password" name="password" className="grow" placeholder="password" required/>
              </label>
+             <div className=" text-right">
+             <NavLink to="/forgetPassword" className="font-bold text-blue-900">Forget Password ? </NavLink>
+             </div>
             <button type="submit" className="btn w-full text-white text-bold text-lg bg-blue-950">Login</button>
         </div>
            </form>

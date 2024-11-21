@@ -2,8 +2,8 @@ import CountUp from 'react-countup';
 
 const Success = () => {
     return (
-      <div className="bg-gradient-to-r from-indigo-500 via-blue-400 to-white text-center py-10 md:py-40 px-5 md:px-20">
-  <h2 className="font-extrabold text-4xl md:text-5xl text-white">Our Success</h2>
+      <div className="bg-gradient-to-r from-indigo-500 via-blue-400 to-white text-center py-10 md:py-28 px-5 md:px-20">
+  <h2 className="font-extrabold text-4xl md:text-5xl text-white mb-10">Our Success</h2>
   <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
     <div className="bg-white rounded-lg shadow-lg p-6 text-center text-blue-600">
       <h3 className="text-4xl font-bold">

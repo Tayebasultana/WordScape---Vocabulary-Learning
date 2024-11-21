@@ -11,6 +11,7 @@ import PrivetRoute from "../component/PrivetRoute/PrivetRoute";
 import Profile from "../component/Profile/Profile";
 import MyProfile from "../component/Profile/MyProfile";
 import UpdateProfile from "../component/Profile/UpdateProfile";
+import ForgetPassword from "../component/ForgetPassword/ForgetPassword";
 
 const router = createBrowserRouter([
     {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
     {
         path:"/login",
         element:<Login></Login>
+    },
+    {
+        path:"/forgetPassword",
+        element:<ForgetPassword></ForgetPassword>
     }, 
     {
         path:"/register",

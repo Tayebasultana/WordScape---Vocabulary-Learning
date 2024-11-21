@@ -27,4 +27,9 @@
     animation-duration: 14s;
     animation-delay: 4s;
   }
-  
+
+  /* Custom slow animation duration */
+  .slow-animation {
+    --animate-duration: 3s;
+
+  }
