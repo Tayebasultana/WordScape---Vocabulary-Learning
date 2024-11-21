@@ -1,14 +1,35 @@
 import { updateProfile } from "firebase/auth";
+import auth from "../../firebase/firebase.config";
+import { useNavigate } from "react-router-dom";
 
-const handleSubmit = (e) =>{
-    e.preventDefault()
-    updateProfile()
-    console.log(updateProfile)
-}
 
 const UpdateProfile = () => {
+    const navigate = useNavigate(); 
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const name = e.target.name.value;
+        const image = e.target.image.value;
+
+        try {
+            
+            await updateProfile(auth.currentUser, {
+                displayName: name,
+                photoURL: image,
+            });
+
+            console.log("Profile updated successfully");
+            alert("Profile updated successfully!");
+            navigate("/profile"); 
+        } catch (error) {
+            console.error("Error updating profile:", error.message);
+            alert("Failed to update profile. Please try again.");
+        }
+    };
+
     return (
-        <div className="max-w-md mx-auto  p-6 bg-white shadow-md rounded-lg">
+        <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg">
             <form action="" onSubmit={handleSubmit}>
                <div className="space-y-4">
                <label className="input input-bordered flex items-center gap-2 ">
