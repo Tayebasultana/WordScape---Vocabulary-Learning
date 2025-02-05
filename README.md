@@ -6,7 +6,7 @@
 WordScape is a language learning platform designed to help users expand their vocabulary in various languages. With an intuitive interface, users can learn new words, explore their meanings, pronunciations, and usage examples, and practice their knowledge. WordScape makes language learning simple, effective, and fun for everyone!
 
 ### Live URL:
-[Live Demo - WordScape](#)  <!-- Replace with your actual live URL -->
+[https://vocabulary-learning-961b0.web.app](#)  <!-- Replace with your actual live URL -->
 
 ## Key Features:
 - **Multi-language Support**: Learn vocabulary in a variety of languages, including French, Japanese, Arabic, Hindi, Portuguese, and many more.
